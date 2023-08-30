@@ -1,0 +1,13 @@
+//This time the challenge is to create an array of strings, then write some code that prints the number of items in the array and also the number of unique items in the array.
+
+//You should start by creating an array of strings, using something like let albums = ["Red", "Fearless"]
+//You can read the number of items in your array using albums.count.
+//count also exists for sets.
+//Sets can be made from arrays using Set(someArray)
+//Sets never include duplicates.
+
+let albums = ["Fear Fun", "I Love You, Honeybear", "Pure Comedy", "God's Favorite Customer", "Chloe and the Next 20th Century"]
+
+let uniqueAlbums = Set(albums)
+
+print("Total albums: \(albums.count), unique albums: \(uniqueAlbums.count)")
