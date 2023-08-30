@@ -1,0 +1,13 @@
+//write a function that accepts an optional array of integers, and returns one randomly.
+//If the array is missing or empty, return a random number in the range 1 through 100
+//Write your function in a single line of code
+//1: Your function should accept an [Int]? – an array of integers that might be there, or might be nil.
+//2: It needs to return a non-optional Int.
+//3: You can use optional chaining to call randomElement() on the optional array, which will in turn return another optional.
+//4: Because you need to return a non-optional integer, you should use nil coalescing to pick a random number from 1 through 100.
+
+func randomNumberGenerator (of array: [Int]?) -> Int {
+    array?.randomElement() ?? Int.random(in: 1...100)
+
+}
+randomNumberGenerator(of: nil)
